@@ -52,6 +52,9 @@ const Skills = () => {
 
   const categoryIcons = {
     'Programming': FiCode,
+    'Web Development': FiCode,
+    'Database': FiFileText,
+    'Networking': FiCloud,
     'Cloud': FiCloud,
     'AI/ML': FiCode,
     'Soft Skills': FiUsers,
