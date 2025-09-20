@@ -245,7 +245,7 @@ const Skills = () => {
             className="text-center p-6 bg-white/5 border border-white/10 rounded-xl"
           >
             <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-              <FiBrain className="w-8 h-8 text-white" />
+              <FiCode className="w-8 h-8 text-white" />
             </div>
             <h4 className="text-xl font-semibold text-white mb-2">Problem Solving</h4>
             <p className="text-dark-300">Analytical thinking and creative solution development</p>
