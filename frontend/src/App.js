@@ -23,6 +23,8 @@ function App() {
 
     // Handle scroll for active section
     const handleScroll = () => {
+      if (loading) return; // Don't handle scroll during loading
+      
       const sections = ['home', 'about', 'skills', 'achievements', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
@@ -37,16 +39,66 @@ function App() {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    if (!loading) {
+      window.addEventListener('scroll', handleScroll);
+    }
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(timer);
     };
-  }, []);
+  }, [loading]);
 
-  if (loading) {
-    return <LoadingScreen />;
-  }
+  return (
+    <div className="App bg-dark-900 text-white min-h-screen">
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <LoadingScreen key="loading" />
+        ) : (
+          <motion.div
+            key="main"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Navbar activeSection={activeSection} />
+            
+            <motion.main
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <section id="home">
+                <Hero />
+              </section>
+              
+              <section id="about">
+                <About />
+              </section>
+              
+              <section id="skills">
+                <Skills />
+              </section>
+              
+              <section id="achievements">
+                <Achievements />
+              </section>
+              
+              <section id="projects">
+                <Projects />
+              </section>
+              
+              <section id="contact">
+                <Contact />
+              </section>
+            </motion.main>
+            
+            <Footer />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 
   return (
     <div className="App bg-dark-900 text-white min-h-screen">
