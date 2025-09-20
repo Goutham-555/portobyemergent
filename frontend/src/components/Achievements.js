@@ -189,7 +189,7 @@ const Achievements = () => {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { icon: FiTrophy, label: 'Hackathon Wins', value: '1', color: 'from-yellow-500 to-orange-500' },
+            { icon: FiAward, label: 'Hackathon Wins', value: '1', color: 'from-yellow-500 to-orange-500' },
             { icon: FiAward, label: 'Certifications', value: '2+', color: 'from-blue-500 to-purple-500' },
             { icon: FiUsers, label: 'Organizations', value: '2', color: 'from-green-500 to-teal-500' },
             { icon: FiTarget, label: 'Years Active', value: '2+', color: 'from-pink-500 to-red-500' }
