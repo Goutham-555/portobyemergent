@@ -100,43 +100,6 @@ function App() {
     </div>
   );
 
-  return (
-    <div className="App bg-dark-900 text-white min-h-screen">
-      <Navbar activeSection={activeSection} />
-      
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <section id="home">
-          <Hero />
-        </section>
-        
-        <section id="about">
-          <About />
-        </section>
-        
-        <section id="skills">
-          <Skills />
-        </section>
-        
-        <section id="achievements">
-          <Achievements />
-        </section>
-        
-        <section id="projects">
-          <Projects />
-        </section>
-        
-        <section id="contact">
-          <Contact />
-        </section>
-      </motion.main>
-      
-      <Footer />
-    </div>
-  );
 }
 
 export default App;
