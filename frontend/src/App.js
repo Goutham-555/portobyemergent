@@ -16,10 +16,10 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
+    // Simulate loading time - reduced for better UX
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1500);
 
     // Handle scroll for active section
     const handleScroll = () => {
