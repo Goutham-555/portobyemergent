@@ -94,6 +94,12 @@ async def get_skills():
             skill['_id'] = str(skill['_id'])
         return skills or [
             {"name": "C Programming", "level": "Intermediate", "category": "Programming"},
+            {"name": "Java OOPs", "level": "Intermediate", "category": "Programming"},
+            {"name": "Python", "level": "Intermediate", "category": "Programming"},
+            {"name": "HTML", "level": "Intermediate", "category": "Web Development"},
+            {"name": "CSS", "level": "Intermediate", "category": "Web Development"},
+            {"name": "Database Management Systems (DBMS)", "level": "Intermediate", "category": "Database"},
+            {"name": "Computer Networks", "level": "Intermediate", "category": "Networking"},
             {"name": "Oracle Cloud Infrastructure", "level": "Foundation", "category": "Cloud"},
             {"name": "Artificial Intelligence", "level": "Foundation", "category": "AI/ML"},
             {"name": "Problem Solving", "level": "Advanced", "category": "Core"},
