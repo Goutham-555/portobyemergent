@@ -13,13 +13,12 @@ const LoadingScreen = () => {
       <div className="text-center">
         <motion.div
           animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
+            rotate: [0, 360],
           }}
           transition={{
-            duration: 2,
+            duration: 1,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "linear"
           }}
           className="w-20 h-20 mx-auto mb-8 border-4 border-primary-500 border-t-transparent rounded-full"
         />
