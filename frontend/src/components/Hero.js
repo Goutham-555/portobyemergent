@@ -223,17 +223,17 @@ const Hero = () => {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-0 w-80 h-80 border border-primary-500/20 rounded-full"
-              />
+              ></motion.div>
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-4 w-72 h-72 border border-accent-500/20 rounded-full"
-              />
+              ></motion.div>
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
                 className="absolute inset-8 w-64 h-64 border border-primary-400/30 rounded-full"
-              />
+              ></motion.div>
               
               {/* Center Content */}
               <div className="relative w-80 h-80 flex items-center justify-center">
