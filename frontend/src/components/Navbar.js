@@ -11,7 +11,7 @@ const Navbar = ({ activeSection }) => {
     { id: 'about', label: 'About', icon: FiUser },
     { id: 'skills', label: 'Skills', icon: FiCode },
     { id: 'achievements', label: 'Achievements', icon: FiAward },
-    { id: 'projects', label: 'Projects', icon: FiFolderOpen },
+    { id: 'projects', label: 'Projects', icon: FiFolder },
     { id: 'contact', label: 'Contact', icon: FiMail },
   ];
 
