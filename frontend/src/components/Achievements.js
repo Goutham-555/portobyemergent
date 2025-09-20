@@ -58,7 +58,7 @@ const Achievements = () => {
   };
 
   const getAchievementIcon = (title) => {
-    if (title.toLowerCase().includes('hackathon')) return FiTrophy;
+    if (title.toLowerCase().includes('hackathon')) return FiAward;
     if (title.toLowerCase().includes('acm')) return FiUsers;
     if (title.toLowerCase().includes('ieee')) return FiBookOpen;
     return FiAward;
