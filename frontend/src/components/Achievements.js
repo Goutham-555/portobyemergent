@@ -86,7 +86,7 @@ const Achievements = () => {
         {/* Achievements Grid */}
         <motion.div variants={itemVariants} className="mb-16">
           <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
-            <FiTrophy className="w-8 h-8 text-primary-400 mr-3" />
+            <FiAward className="w-8 h-8 text-primary-400 mr-3" />
             Key Achievements
           </h3>
           
