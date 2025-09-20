@@ -252,7 +252,7 @@ const Hero = () => {
                 </motion.div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Scroll Indicator */}
