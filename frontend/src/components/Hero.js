@@ -126,19 +126,7 @@ const Hero = () => {
               </motion.h1>
               
               <div className="text-xl md:text-2xl text-dark-300 h-16">
-                <Typed
-                  strings={[
-                    personalInfo.title,
-                    "Problem Solver",
-                    "Technology Enthusiast",
-                    "Future Software Developer"
-                  ]}
-                  typeSpeed={50}
-                  backSpeed={30}
-                  backDelay={1500}
-                  loop
-                  className="font-medium"
-                />
+                <p className="font-medium">{personalInfo.title}</p>
               </div>
             </motion.div>
 
