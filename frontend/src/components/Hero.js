@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiDownload, FiExternalLink, FiLinkedin, FiMail, FiGithub } from 'react-icons/fi';
 import { useInView } from 'react-intersection-observer';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 const Hero = () => {
   const [ref, inView] = useInView({
