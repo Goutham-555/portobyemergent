@@ -16,15 +16,19 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    // Simulate loading time - reduced for better UX
+    // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (loading) return;
 
     // Handle scroll for active section
     const handleScroll = () => {
-      if (loading) return; // Don't handle scroll during loading
-      
       const sections = ['home', 'about', 'skills', 'achievements', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
@@ -39,14 +43,8 @@ function App() {
       });
     };
 
-    if (!loading) {
-      window.addEventListener('scroll', handleScroll);
-    }
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(timer);
-    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [loading]);
 
   if (loading) {
